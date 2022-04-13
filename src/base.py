@@ -279,8 +279,6 @@ class Base():
         system('clear')
         self.base = [[self.bg_pixel for i in range(self.cols)] for j in range(self.rows)]
 
-        print(self.th.hpts)
-
         # check level
         Base.check_level(self)
 
@@ -1246,7 +1244,6 @@ class Base():
             self.p_ct = 2
 
         if(time() - self.eagle_start_time > 1):
-            print('worked')
             Base.queen_arrow(self, self.hero)
             self.eagle_start_time = time() + 1000
 
